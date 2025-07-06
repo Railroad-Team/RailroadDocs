@@ -9,17 +9,20 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /get-started
+      link: /tutorials/getting-started
     - theme: alt
       text: Plugin Documentation
-      link: /docs/plugins
+      link: /plugins/docs
 
 features:
   - title: Project Creation
+    icon: 🔨
     details: Create Minecraft Modding projects with ease using the simple & effective project creation wizard.
   - title: Easy Creation
+    icon: 👌
     details: An easier way to create features within your mods, with the IDE creating the boilerplate code for you.
   - title: Easy Json Creation
+    icon: 📑
     details: Use our Json Creator to simplify the creation of Json files, for features such as Loot Tables, Crafting Recipes, and much more.
 ---
 

@@ -4,25 +4,42 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Railroad Docs",
   description: "The documentation for the Railroad IDE",
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en'
+    },
+    fr: {
+        label: 'Français', //TODO create a system to "patch" the docs to other languages
+        lang: 'fr',
+        link: '/fr/'
+    }
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    //TODO add edit links?
+    i18nRouting: true,
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Getting Started', link: '/tutorials/' },
+      { text: 'The Port', link: '/port' }, //TBD
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Getting Started',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {text: 'Overview', link: '/tutorials/'},
+          {text: 'Installation', link: '/tutorials/installation'},
+          {text: 'Creating a Project', link: '/tutorials/project-creation'},
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+      { icon: 'github', link: 'https://github.com/Railroad-Team/Railroad' }
+    ],
+  },
+  srcDir: 'src',
+  ignoreDeadLinks: true // TEMPORARY: Remove at a later date
 })

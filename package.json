@@ -1,7 +1,7 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
+    "docs:build": "vitepress build && cp src/_redirects .vitepress/dist/_redirects",
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {

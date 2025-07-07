@@ -33,6 +33,18 @@ export default defineConfig({
           {text: 'Installation', link: '/tutorials/installation'},
           {text: 'Creating a Project', link: '/tutorials/project-creation'},
         ]
+      },
+      {
+        text: 'The Port',
+        items: [
+          { text: 'Plugins', items: [
+            { text: 'Overview', link: '/plugins/' },
+            { text: 'Creating a Plugin', link: '/plugins/docs' },
+            { text: 'Plugin API', link: '/plugins/docs/api-overview' },
+            { text: 'Plugin Examples', link: '/plugins/docs/plugin-examples' },
+            { text: 'Submitting a Plugin', link: '/plugins/docs/submitting-plugins' }
+          ]}
+        ]
       }
     ],
 

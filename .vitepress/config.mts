@@ -41,5 +41,11 @@ export default defineConfig({
     ],
   },
   srcDir: 'src',
-  ignoreDeadLinks: true // TEMPORARY: Remove at a later date
+  ignoreDeadLinks: true, // TEMPORARY: Remove at a later date
+  markdown: {
+    theme: {
+      light: "catppuccin-latte",
+      dark: "catppuccin-mocha"
+    }
+  }
 })

@@ -12,7 +12,7 @@ hero:
       link: /tutorials/getting-started
     - theme: alt
       text: Plugin Documentation
-      link: /plugins/docs
+      link: /plugins/
 
 features:
   - title: Project Creation

@@ -16,7 +16,7 @@ features:
   - title: Plugin Documentation
     icon: 📖
     details: Documentation on how to create plugins for Railroad IDE using the Railroad Plugin API.
-    link: /plugins/docs/
+    link: /plugins/
     linkText: Documentation
   - title: Contributing
   - title: Support

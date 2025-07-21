@@ -11,9 +11,9 @@ This component automatically applies Railroad-specific styling classes (`"Railro
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRGridPane;
-import io.github.railroad.core.ui.RRTextField;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRGridPane;
+import dev.railroadide.core.ui.RRTextField;
+import dev.railroadide.core.ui.RRButton;
 import javafx.geometry.Insets;
 
 RRGridPane gridPane = new RRGridPane();

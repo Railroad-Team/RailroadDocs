@@ -23,10 +23,10 @@ Plugins can subscribe to events published by the Railroad application or other p
 Here is an example of a plugin that subscribes to `ProjectEvent` to detect when projects are opened or closed. It also demonstrates proper cleanup in `onDisable`.
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.event.EventListener;
-import io.github.railroad.railroadpluginapi.events.ProjectEvent;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.event.EventListener;
+import dev.railroadide.railroadpluginapi.events.ProjectEvent;
 
 public class MyPlugin implements Plugin {
     private EventListener<ProjectEvent> projectEventListener;

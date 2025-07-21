@@ -58,7 +58,7 @@ javafx {
 dependencies {
     // Railroad Plugin API - essential for all Railroad plugins
     // Replace 'x.y.z' with the actual version of the Railroad Plugin API you are targeting
-    compileOnly 'io.github.railroad:railroad-plugin-api:x.y.z'
+    compileOnly 'dev.railroadide:railroad-plugin-api:x.y.z'
 
     // JavaFX dependencies (if using JavaFX for UI)
     implementation 'org.openjfx:javafx-controls'

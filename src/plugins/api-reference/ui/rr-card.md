@@ -19,10 +19,10 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.RRCard;
-import io.github.railroad.core.ui.RRVBox;
-import io.github.railroad.core.ui.RRTextField;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRCard;
+import dev.railroadide.core.ui.RRVBox;
+import dev.railroadide.core.ui.RRTextField;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.control.Label;
 import javafx.geometry.Insets;
 

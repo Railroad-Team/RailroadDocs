@@ -2,7 +2,7 @@
 
 Railroad provides a set of custom UI components built on top of JavaFX. These components are designed to ensure a consistent look and feel across the application, adhere to Railroad's design guidelines, and often include built-in theming and localization support. Plugins that need to create custom user interfaces, such as for settings panes or custom dialogs, should utilize these components.
 
-All these components are located in the `io.github.railroad.core.ui` package, with specialized localized components in `io.github.railroad.core.ui.localized`.
+All these components are located in the `dev.railroadide.core.ui` package, with specialized localized components in `dev.railroadide.core.ui.localized`.
 
 ## Basic Components
 

@@ -11,13 +11,13 @@ You can access registries through the `PluginContext` using the `getRegistry()` 
 This example demonstrates how to access the settings registry and register a custom setting for your plugin. This is a common pattern for allowing users to configure aspects of your plugin.
 
 ```java
-import io.github.railroad.core.registry.Registry;
-import io.github.railroad.core.settings.DefaultSettingCodecs;
-import io.github.railroad.core.settings.Setting;
-import io.github.railroad.core.settings.SettingCategory;
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.Registries;
+import dev.railroadide.core.registry.Registry;
+import dev.railroadide.core.settings.DefaultSettingCodecs;
+import dev.railroadide.core.settings.Setting;
+import dev.railroadide.core.settings.SettingCategory;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.Registries;
 
 public class MySettingPlugin implements Plugin {
     // Define a unique ID for your setting
@@ -64,7 +64,7 @@ public class MySettingPlugin implements Plugin {
 
 ## `Registry` Interface
 
-The `io.github.railroad.core.registry.Registry` interface defines the common operations for managing collections of items. Any registry you obtain from the `PluginContext` or `Registries` utility class will implement this interface.
+The `dev.railroadide.core.registry.Registry` interface defines the common operations for managing collections of items. Any registry you obtain from the `PluginContext` or `Registries` utility class will implement this interface.
 
 ### Key Methods:
 
@@ -81,9 +81,9 @@ The `io.github.railroad.core.registry.Registry` interface defines the common ope
 ### Example: Interacting with a Generic Registry
 
 ```java
-import io.github.railroad.core.registry.Registry;
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
+import dev.railroadide.core.registry.Registry;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
 
 public class MyGenericRegistryPlugin implements Plugin {
 

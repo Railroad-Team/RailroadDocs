@@ -12,10 +12,10 @@ These components automatically apply Railroad-specific styling classes (`"Railro
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRHBox;
-import io.github.railroad.core.ui.RRVBox;
-import io.github.railroad.core.ui.RRButton;
-import io.github.railroad.core.ui.RRTextField;
+import dev.railroadide.core.ui.RRHBox;
+import dev.railroadide.core.ui.RRVBox;
+import dev.railroadide.core.ui.RRButton;
+import dev.railroadide.core.ui.RRTextField;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 

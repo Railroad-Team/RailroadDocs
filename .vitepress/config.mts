@@ -14,6 +14,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         //TODO add edit links?
         i18nRouting: true,
+        logo: "/railroad.png",
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Tutorials', link: '/tutorials/getting-started'},

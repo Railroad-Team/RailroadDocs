@@ -3,8 +3,8 @@ import {defineConfig} from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Railroad Docs",
-    description: "The documentation for the Railroad IDE",
-    locales: {
+    description: "Documentation for the Railroad IDE",
+    locales: { // IMPORTANT : L10n is not yet implemented
         root: {
             label: 'English',
             lang: 'en'
@@ -12,8 +12,10 @@ export default defineConfig({
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        //TODO add edit links?
-        i18nRouting: true,
+        i18nRouting: false,
+        editLink: {
+            pattern: 'https://github.com/Railroad-Team/RailroadDocs/edit/main/src/:path'
+        },
         logo: "/railroad.png",
         nav: [
             {text: 'Home', link: '/'},
@@ -107,19 +109,15 @@ export default defineConfig({
                         ]
                     }
                 ]
-            },
-            {
-                text: 'Porting from other platforms',
-                link: '/port/'
             }
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/Railroad-Team/Railroad'}
+            {icon: 'github', link: 'https://github.com/Railroad-Team/'},
+            {icon: 'discord', link: 'https://discord.turtywurty.dev/'}
         ],
     },
     srcDir: 'src',
-    ignoreDeadLinks: true, // TEMPORARY: Remove at a later date
     markdown: {
         theme: {
             light: "catppuccin-latte",

@@ -5,7 +5,7 @@ layout: home
 
 hero:
  name: Getting Started
- text: Some resources to help you get started with Railroad IDE.
+ tagline: Some resources to help you get started with Railroad IDE.
 
 features:
   - title: Installation

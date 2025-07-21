@@ -18,7 +18,7 @@ RUN npm run build
 FROM alpine:latest
 
 # Copy the built static files from the builder stage to a standard location
-COPY --from=builder /app/src/.vitepress/dist /usr/share/nginx/html
+COPY --from=builder /app/.vitepress/dist /usr/share/nginx/html
 
 # This container is intended to be used for its data volume.
 # A command is added to provide a clear message if someone runs it directly.

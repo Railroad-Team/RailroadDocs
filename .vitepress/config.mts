@@ -8,11 +8,6 @@ export default defineConfig({
         root: {
             label: 'English',
             lang: 'en'
-        },
-        fr: {
-            label: 'Français', //TODO create a system to "patch" the docs to other languages
-            lang: 'fr',
-            link: '/fr/'
         }
     },
     themeConfig: {
@@ -40,6 +35,7 @@ export default defineConfig({
                     {text: 'Introduction', link: '/plugins/'},
                     {
                         text: 'Guide',
+                        collapsed: true,
                         items: [
                             {text: 'Getting Started', link: '/plugins/guide/getting-started'},
                             {text: 'Project Setup', link: '/plugins/guide/project-setup'},
@@ -54,6 +50,7 @@ export default defineConfig({
                     },
                     {
                         text: 'API Reference',
+                        collapsed: true,
                         items: [
                             {text: 'Introduction', link: '/plugins/api-reference/'},
                             {text: 'Plugin', link: '/plugins/api-reference/plugin'},
@@ -66,6 +63,7 @@ export default defineConfig({
                             {text: 'Logger', link: '/plugins/api-reference/logger.md'},
                             {
                                 text: 'UI Components',
+                                collapsed: true,
                                 link: '/plugins/api-reference/ui/',
                                 items: [
                                     {text: 'RRButton', link: '/plugins/api-reference/ui/rr-button'},
@@ -87,6 +85,7 @@ export default defineConfig({
                                     {text: 'Localized Components', link: '/plugins/api-reference/ui/localized-components'},
                                     {
                                         text: 'Forms', link: '/plugins/api-reference/ui/forms/index.md',
+                                        collapsed: true,
                                         items: [
                                             {text: 'FormCheckBox', link: '/plugins/api-reference/ui/forms/form-check-box'},
                                             {text: 'FormComboBox', link: '/plugins/api-reference/ui/forms/form-combo-box'},

@@ -46,7 +46,7 @@ tasks.withType(JavaCompile).configureEach {
 
 repositories {
     mavenCentral() // Standard Maven Central repository
-    maven { url 'https://jitpack.io' }
+    maven { url 'https://maven.railroadide.dev/releases' }
 }
 
 // JavaFX configuration, if the 'org.openjfx.javafxplugin' is applied
@@ -58,7 +58,8 @@ javafx {
 dependencies {
     // Railroad Plugin API - essential for all Railroad plugins
     // Replace 'x.y.z' with the actual version of the Railroad Plugin API you are targeting
-    compileOnly 'dev.railroadide:railroad-plugin-api:x.y.z'
+    // A list of available versions can be found at https://maven.railroadide.dev/#/releases/dev/railroadide/RailroadPluginAPI
+    compileOnly 'dev.railroadide:RailroadPluginAPI:x.y.z'
 
     // JavaFX dependencies (if using JavaFX for UI)
     implementation 'org.openjfx:javafx-controls'

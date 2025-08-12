@@ -20,6 +20,7 @@ export default defineConfig({
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Tutorials', link: '/tutorials/getting-started'},
+            {text: 'Development', link: '/development/building-and-running'},
             {text: 'Plugins', link: '/plugins/'}
         ],
 
@@ -33,6 +34,12 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'Development',
+                items: [
+                    {text: 'Building and Running', link: '/development/building-and-running'}
+                ]
+            },
+            {
                 text: 'Plugins',
                 items: [
                     {text: 'Introduction', link: '/plugins/'},
@@ -43,12 +50,13 @@ export default defineConfig({
                             {text: 'Getting Started', link: '/plugins/guide/getting-started'},
                             {text: 'Project Setup', link: '/plugins/guide/project-setup'},
                             {text: 'Plugin Class', link: '/plugins/guide/plugin-class'},
-                            {text: 'Accessing Services', link: '/plugins/guide/accessing-services'},
                             {text: 'plugin.json Configuration', link: '/plugins/guide/plugin-json'},
+                            {text: 'Accessing Services', link: '/plugins/guide/accessing-services'},
                             {text: 'Plugin Structure', link: '/plugins/guide/plugin-structure'},
                             {text: 'Dependencies', link: '/plugins/guide/dependencies'},
                             {text: 'Events', link: '/plugins/guide/events'},
-                            {text: 'Working with Projects', link: '/plugins/guide/working-with-projects'}
+                            {text: 'Working with Projects', link: '/plugins/guide/working-with-projects'},
+                            {text: 'Building Plugins', link: '/plugins/guide/building-plugins'}
                         ]
                     },
                     {
@@ -57,6 +65,7 @@ export default defineConfig({
                         items: [
                             {text: 'Introduction', link: '/plugins/api-reference/'},
                             {text: 'Plugin', link: '/plugins/api-reference/plugin'},
+                            {text: 'Events', link: '/plugins/api-reference/events'},
                             {text: 'Services', link: '/plugins/api-reference/services'},
                             {text: 'Registries', link: '/plugins/api-reference/registries'},
                             {text: 'Settings', link: '/plugins/api-reference/settings'},

@@ -31,7 +31,7 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.1.0' // If your plugin uses JavaFX for UI
 }
 
-group = 'com.example.exampleperson.plugin' // Replace with your unique group ID
+group = 'com.example.exampleperson' // Replace with your unique group ID
 version = '1.0.0-SNAPSHOT' // Replace with your plugin's version (use -SNAPSHOT for development)
 
 java {

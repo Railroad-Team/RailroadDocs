@@ -8,7 +8,7 @@ The `plugin.json` file is a crucial part of your Railroad plugin, providing esse
     - `id` (string): A unique identifier for your plugin (e.g., `com.example.myplugin`).
     - `name` (string): The human-readable name of your plugin (e.g., `My Awesome Plugin`).
     - `version` (string): The version of your plugin (e.g., `1.0.0`).
-    - `mainClass` (string): The fully qualified name of your main plugin class that implements `io.github.railroad.railroadpluginapi.Plugin` (e.g., `com.example.MyPlugin`).
+    - `mainClass` (string): The fully qualified name of your main plugin class that implements `dev.railroadide.railroadpluginapi.Plugin` (e.g., `com.example.MyPlugin`).
 
 - **Optional Fields:**
     - `author` (string): The author(s) of the plugin.

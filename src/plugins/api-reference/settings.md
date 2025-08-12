@@ -22,9 +22,9 @@ The `Setting` class is the core component of the settings API. Each `Setting` re
 You create `Setting` instances using its fluent `builder` API:
 
 ```java
-import io.github.railroad.core.settings.Setting;
-import io.github.railroad.core.settings.SettingCategory;
-import io.github.railroad.core.settings.DefaultSettingCodecs;
+import dev.railroadide.core.settings.Setting;
+import dev.railroadide.core.settings.SettingCategory;
+import dev.railroadide.core.settings.DefaultSettingCodecs;
 
 // Example: A boolean setting for enabling/disabling a feature
 Setting<Boolean> enableFeatureSetting = Setting.builder(Boolean.class, "myplugin:enable_feature")
@@ -54,7 +54,7 @@ Setting<String> customMessageSetting = Setting.builder(String.class, "myplugin:c
 ### Building a SettingCategory:
 
 ```java
-import io.github.railroad.core.settings.SettingCategory;
+import dev.railroadide.core.settings.SettingCategory;
 
 // Simple category
 SettingCategory generalCategory = SettingCategory.simple("myplugin:general");
@@ -96,8 +96,8 @@ Railroad provides a set of predefined `SettingCodec` instances for common data t
 ### Example Usage:
 
 ```java
-import io.github.railroad.core.settings.DefaultSettingCodecs;
-import io.github.railroad.core.settings.Setting;
+import dev.railroadide.core.settings.DefaultSettingCodecs;
+import dev.railroadide.core.settings.Setting;
 
 Setting<Integer> maxAttempts = Setting.builder(Integer.class, "myplugin:max_attempts")
         .codec(DefaultSettingCodecs.INTEGER)
@@ -111,12 +111,12 @@ Setting<Integer> maxAttempts = Setting.builder(Integer.class, "myplugin:max_atte
 Settings are registered with the application's settings registry, which is accessible via `Registries.getSettingsRegistry(context)` from your `PluginContext`.
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.Registries;
-import io.github.railroad.core.settings.Setting;
-import io.github.railroad.core.settings.SettingCategory;
-import io.github.railroad.core.settings.DefaultSettingCodecs;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.Registries;
+import dev.railroadide.core.settings.Setting;
+import dev.railroadide.core.settings.SettingCategory;
+import dev.railroadide.core.settings.DefaultSettingCodecs;
 
 public class MySettingsPlugin implements Plugin {
 

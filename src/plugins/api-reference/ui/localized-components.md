@@ -2,7 +2,7 @@
 
 Railroad provides specialized UI components that automatically integrate with the application's localization system. These components extend standard JavaFX controls and simplify the process of displaying localized text, ensuring your plugin is ready for internationalization.
 
-All these components are located in the `io.github.railroad.core.ui.localized` package.
+All these components are located in the `dev.railroadide.core.ui.localized` package.
 
 ## `LocalizedButton`
 
@@ -101,9 +101,9 @@ An extension of `javafx.scene.control.Tooltip` whose text is automatically updat
 ## Usage Example (General)
 
 ```java
-import io.github.railroad.core.ui.localized.LocalizedLabel;
-import io.github.railroad.core.ui.localized.LocalizedButton;
-import io.github.railroad.core.ui.localized.LocalizedTextField;
+import dev.railroadide.core.ui.localized.LocalizedLabel;
+import dev.railroadide.core.ui.localized.LocalizedButton;
+import dev.railroadide.core.ui.localized.LocalizedTextField;
 import javafx.scene.layout.VBox;
 
 // Assuming localization keys:

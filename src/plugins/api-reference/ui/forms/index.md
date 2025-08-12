@@ -27,9 +27,9 @@ Here are the specific UI components available for building forms:
 Here's a simple example demonstrating how to create a form with a text field and a submit button:
 
 ```java
-import io.github.railroad.core.form.Form;
-import io.github.railroad.core.form.FormComponent;
-import io.github.railroad.core.form.ui.FormTextField;
+import dev.railroadide.core.form.Form;
+import dev.railroadide.core.form.FormComponent;
+import dev.railroadide.core.form.ui.FormTextField;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 

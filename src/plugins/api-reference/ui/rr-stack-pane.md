@@ -9,8 +9,8 @@
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRStackPane;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRStackPane;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;

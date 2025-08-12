@@ -18,10 +18,10 @@ The `LocalizationServiceLocator` is a utility class that provides access to the 
 ### Example: Using LocalizationService
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.core.localization.LocalizationService;
-import io.github.railroad.core.localization.LocalizationServiceLocator;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.core.localization.LocalizationService;
+import dev.railroadide.core.localization.LocalizationServiceLocator;
 
 public class MyLocalizationPlugin implements Plugin {
 

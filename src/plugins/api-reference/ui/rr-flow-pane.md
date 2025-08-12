@@ -9,8 +9,8 @@
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRFlowPane;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRFlowPane;
+import dev.railroadide.core.ui.RRButton;
 import javafx.geometry.Insets;
 import javafx.geometry.Orientation;
 

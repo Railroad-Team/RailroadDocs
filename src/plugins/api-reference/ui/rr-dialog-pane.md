@@ -9,7 +9,7 @@
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRDialogPane;
+import dev.railroadide.core.ui.RRDialogPane;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;

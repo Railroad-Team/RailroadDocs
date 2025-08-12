@@ -9,8 +9,8 @@
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRAnchorPane;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRAnchorPane;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.layout.AnchorPane;
 
 RRAnchorPane anchorPane = new RRAnchorPane();

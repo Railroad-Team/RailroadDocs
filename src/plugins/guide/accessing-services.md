@@ -7,9 +7,9 @@ The `PluginContext` provides access to various services that your plugin can use
 Here is an example of how to access the `ApplicationInfoService` to get the application version:
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.services.ApplicationInfoService;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.services.ApplicationInfoService;
 
 public class MyPlugin implements Plugin {
     @Override

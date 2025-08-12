@@ -24,7 +24,9 @@ export default defineConfig({
             {text: 'Tutorials', link: '/tutorials/getting-started'},
             {text: 'Plugins', link: '/plugins/'}
         ],
-
+        search: {
+            provider: 'local'
+        },
         sidebar: [
             {
                 text: 'Tutorials',

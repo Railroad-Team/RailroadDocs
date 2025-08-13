@@ -29,10 +29,10 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.BrowseButton;
-import io.github.railroad.core.ui.BrowseButton.BrowseType;
-import io.github.railroad.core.ui.BrowseButton.BrowseSelectionMode;
-import io.github.railroad.core.ui.RRTextField;
+import dev.railroadide.core.ui.BrowseButton;
+import dev.railroadide.core.ui.BrowseButton.BrowseType;
+import dev.railroadide.core.ui.BrowseButton.BrowseSelectionMode;
+import dev.railroadide.core.ui.RRTextField;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import java.nio.file.Paths;

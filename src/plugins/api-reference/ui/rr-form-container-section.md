@@ -43,10 +43,10 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.RRFormContainer;
-import io.github.railroad.core.ui.RRFormSection;
-import io.github.railroad.core.ui.RRTextField;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRFormContainer;
+import dev.railroadide.core.ui.RRFormSection;
+import dev.railroadide.core.ui.RRTextField;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.control.CheckBox;
 
 // Assuming localization keys like:

@@ -16,4 +16,4 @@ To listen for events, create a class that implements the `EventListener` interfa
 - `FileEvent`: Fired when a file is opened, closed, or modified.
 - `EnterDefaultStateEvent`: Fired when the IDE enters its default state.
 
-Check the `io.github.railroad.railroadpluginapi.events` package for a full list of events.
+Check the `dev.railroadide.railroadpluginapi.events` package for a full list of events.

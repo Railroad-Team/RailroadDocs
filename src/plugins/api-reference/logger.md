@@ -18,9 +18,9 @@ Messages are logged through a `Logger` instance, which can be obtained from the 
 Here's how to create and use a logger in your plugin, utilizing the `LoggerManager` builder pattern for proper configuration:
 
 ```java
-import io.github.railroad.logger.Logger;
-import io.github.railroad.logger.LoggerManager;
-import io.github.railroad.logger.LoggingLevel;
+import dev.railroadide.logger.Logger;
+import dev.railroadide.logger.LoggerManager;
+import dev.railroadide.logger.LoggingLevel;
 import java.nio.file.Path;
 import java.util.concurrent.TimeUnit;
 
@@ -102,7 +102,7 @@ The `LoggingLevel` enum represents the different severity levels for log message
 `LoggingLevel` values are used when calling logging methods (e.g., `Logger.log(message, LoggingLevel.INFO, objects)`).
 
 ```java
-import io.github.railroad.logger.LoggingLevel;
+import dev.railroadide.logger.LoggingLevel;
 
 // Example of using LoggingLevel
 LoggingLevel currentLevel = LoggingLevel.INFO;

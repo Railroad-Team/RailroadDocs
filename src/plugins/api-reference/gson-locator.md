@@ -13,9 +13,9 @@ The `GsonLocator` is a utility class that provides a singleton instance of `com.
 ### Example: Using `GsonLocator`
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.core.gson.GsonLocator;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.core.gson.GsonLocator;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 

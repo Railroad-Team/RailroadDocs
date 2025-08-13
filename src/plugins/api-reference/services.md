@@ -11,14 +11,14 @@ You can obtain a service instance by calling `context.getService(ServiceClass.cl
 The `RailroadDiscordPlugin` demonstrates the use of `ApplicationInfoService` to get application version information and `IDEStateService` to retrieve the current project and file information, which are then used to update Discord Rich Presence.
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.events.ProjectEvent;
-import io.github.railroad.railroadpluginapi.events.FileEvent;
-import io.github.railroad.railroadpluginapi.services.ApplicationInfoService;
-import io.github.railroad.railroadpluginapi.services.IDEStateService;
-import io.github.railroad.railroadpluginapi.dto.Project;
-import io.github.railroad.railroadpluginapi.dto.Document;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.events.ProjectEvent;
+import dev.railroadide.railroadpluginapi.events.FileEvent;
+import dev.railroadide.railroadpluginapi.services.ApplicationInfoService;
+import dev.railroadide.railroadpluginapi.services.IDEStateService;
+import dev.railroadide.railroadpluginapi.dto.Project;
+import dev.railroadide.railroadpluginapi.dto.Document;
 
 public class MyServicePlugin implements Plugin {
 
@@ -68,10 +68,10 @@ public class MyServicePlugin implements Plugin {
 The `RailroadGithubPlugin` utilizes the `VCSService` to manage version control profiles, specifically for adding and removing GitHub accounts. This demonstrates how plugins can extend core functionalities like VCS integration.
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.services.VCSService;
-import io.github.railroad.github.data.GithubAccount; // Assuming this is part of your plugin's data model
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.services.VCSService;
+import dev.railroadide.github.data.GithubAccount; // Assuming this is part of your plugin's data model
 
 public class MyVCSPlugin implements Plugin {
 

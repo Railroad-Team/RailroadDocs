@@ -24,7 +24,7 @@ This interface is used to define a callback for handling events. When an event o
 
 - `void handle(T event)`: This method is called when an event of type `T` is published.
 
-## Core Events (`io.github.railroad.railroadpluginapi.events`)
+## Core Events (`dev.railroadide.railroadpluginapi.events`)
 
 The API provides several built-in events that cover common application occurrences:
 
@@ -39,10 +39,10 @@ The API provides several built-in events that cover common application occurrenc
 As seen in the `RailroadDiscordPlugin`, you can subscribe to `ProjectEvent` to perform actions when a project is opened or closed:
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.event.EventListener;
-import io.github.railroad.railroadpluginapi.events.ProjectEvent;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.event.EventListener;
+import dev.railroadide.railroadpluginapi.events.ProjectEvent;
 
 public class ProjectLoggerPlugin implements Plugin {
 

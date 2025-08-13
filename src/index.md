@@ -6,6 +6,9 @@ hero:
   name: "Railroad Docs"
   text: "The documentation for the Railroad IDE"
   tagline: The best IDE for all your Minecraft Modding needs!
+  image: 
+    src: /railroad.png
+    alt: The Railroad logo
   actions:
     - theme: brand
       text: Get Started

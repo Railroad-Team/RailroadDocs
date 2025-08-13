@@ -16,9 +16,9 @@ The `SecureTokenStore` class allows you to save, retrieve, and clear tokens secu
 ### Example: Using `SecureTokenStore`
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.core.secure_storage.SecureTokenStore;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.core.secure_storage.SecureTokenStore;
 
 public class MySecureStoragePlugin implements Plugin {
 

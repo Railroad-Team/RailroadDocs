@@ -30,11 +30,11 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.RRSidebar;
-import io.github.railroad.core.ui.RRSidebar.SidebarPosition;
-import io.github.railroad.core.ui.RRSidebar.SidebarSize;
-import io.github.railroad.core.ui.RRNavigationItem;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRSidebar;
+import dev.railroadide.core.ui.RRSidebar.SidebarPosition;
+import dev.railroadide.core.ui.RRSidebar.SidebarSize;
+import dev.railroadide.core.ui.RRNavigationItem;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.control.Label;
 import org.kordamp.ikonli.fontawesome6.FontAwesomeSolid;
 

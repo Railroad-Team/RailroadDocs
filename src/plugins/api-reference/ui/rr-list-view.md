@@ -32,8 +32,8 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.RRListView;
-import io.github.railroad.core.ui.RRListView.ListViewSize;
+import dev.railroadide.core.ui.RRListView;
+import dev.railroadide.core.ui.RRListView.ListViewSize;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.layout.VBox;

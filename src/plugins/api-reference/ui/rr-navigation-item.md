@@ -36,9 +36,9 @@
 ## Usage Example
 
 ```java
-import io.github.railroad.core.ui.RRNavigationItem;
-import io.github.railroad.core.ui.RRNavigationItem.NavigationItemSize;
-import io.github.railroad.core.ui.RRNavigationItem.NavigationItemState;
+import dev.railroadide.core.ui.RRNavigationItem;
+import dev.railroadide.core.ui.RRNavigationItem.NavigationItemSize;
+import dev.railroadide.core.ui.RRNavigationItem.NavigationItemState;
 import javafx.scene.layout.VBox;
 import org.kordamp.ikonli.fontawesome6.FontAwesomeSolid;
 

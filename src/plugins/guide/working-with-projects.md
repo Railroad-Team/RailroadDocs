@@ -9,11 +9,11 @@ The primary way to access information about the current project and active docum
 ### Example: Getting Current Project and Document
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.services.IDEStateService;
-import io.github.railroad.railroadpluginapi.dto.Project;
-import io.github.railroad.railroadpluginapi.dto.Document;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.services.IDEStateService;
+import dev.railroadide.railroadpluginapi.dto.Project;
+import dev.railroadide.railroadpluginapi.dto.Document;
 
 public class ProjectDocumentPlugin implements Plugin {
 
@@ -64,10 +64,10 @@ This event is fired when a project is opened or closed. It provides access to th
 ### Example: Handling Project Open/Close Events
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.event.EventListener;
-import io.github.railroad.railroadpluginapi.events.ProjectEvent;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.event.EventListener;
+import dev.railroadide.railroadpluginapi.events.ProjectEvent;
 
 public class ProjectEventListenerPlugin implements Plugin {
 
@@ -99,11 +99,11 @@ This event is fired when a file becomes active (e.g., opened in the editor or sw
 ### Example: Handling Active File Changes
 
 ```java
-import io.github.railroad.railroadpluginapi.Plugin;
-import io.github.railroad.railroadpluginapi.PluginContext;
-import io.github.railroad.railroadpluginapi.event.EventListener;
-import io.github.railroad.railroadpluginapi.events.FileEvent;
-import io.github.railroad.railroadpluginapi.dto.Document;
+import dev.railroadide.railroadpluginapi.Plugin;
+import dev.railroadide.railroadpluginapi.PluginContext;
+import dev.railroadide.railroadpluginapi.event.EventListener;
+import dev.railroadide.railroadpluginapi.events.FileEvent;
+import dev.railroadide.railroadpluginapi.dto.Document;
 
 public class FileEventListenerPlugin implements Plugin {
 

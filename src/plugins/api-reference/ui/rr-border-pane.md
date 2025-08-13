@@ -9,8 +9,8 @@
 ## Usage
 
 ```java
-import io.github.railroad.core.ui.RRBorderPane;
-import io.github.railroad.core.ui.RRButton;
+import dev.railroadide.core.ui.RRBorderPane;
+import dev.railroadide.core.ui.RRButton;
 import javafx.scene.control.Label;
 
 RRBorderPane borderPane = new RRBorderPane();

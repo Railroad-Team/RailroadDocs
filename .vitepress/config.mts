@@ -3,25 +3,24 @@ import {defineConfig} from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Railroad Docs",
-    description: "The documentation for the Railroad IDE",
-    locales: {
+    description: "Documentation for the Railroad IDE",
+    locales: { // IMPORTANT : L10n is not yet implemented
         root: {
             label: 'English',
             lang: 'en'
-        },
-        fr: {
-            label: 'Français', //TODO create a system to "patch" the docs to other languages
-            lang: 'fr',
-            link: '/fr/'
         }
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        //TODO add edit links?
-        i18nRouting: true,
+        i18nRouting: false,
+        editLink: {
+            pattern: 'https://github.com/Railroad-Team/RailroadDocs/edit/main/src/:path'
+        },
+        logo: "/railroad.png",
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Tutorials', link: '/tutorials/getting-started'},
+            {text: 'Development', link: '/development/building-and-running'},
             {text: 'Plugins', link: '/plugins/'}
         ],
         search: {
@@ -37,28 +36,38 @@ export default defineConfig({
                 ]
             },
             {
+                text: 'Development',
+                items: [
+                    {text: 'Building and Running', link: '/development/building-and-running'}
+                ]
+            },
+            {
                 text: 'Plugins',
                 items: [
                     {text: 'Introduction', link: '/plugins/'},
                     {
                         text: 'Guide',
+                        collapsed: true,
                         items: [
                             {text: 'Getting Started', link: '/plugins/guide/getting-started'},
                             {text: 'Project Setup', link: '/plugins/guide/project-setup'},
                             {text: 'Plugin Class', link: '/plugins/guide/plugin-class'},
-                            {text: 'Accessing Services', link: '/plugins/guide/accessing-services'},
                             {text: 'plugin.json Configuration', link: '/plugins/guide/plugin-json'},
+                            {text: 'Accessing Services', link: '/plugins/guide/accessing-services'},
                             {text: 'Plugin Structure', link: '/plugins/guide/plugin-structure'},
                             {text: 'Dependencies', link: '/plugins/guide/dependencies'},
                             {text: 'Events', link: '/plugins/guide/events'},
-                            {text: 'Working with Projects', link: '/plugins/guide/working-with-projects'}
+                            {text: 'Working with Projects', link: '/plugins/guide/working-with-projects'},
+                            {text: 'Building Plugins', link: '/plugins/guide/building-plugins'}
                         ]
                     },
                     {
                         text: 'API Reference',
+                        collapsed: true,
                         items: [
                             {text: 'Introduction', link: '/plugins/api-reference/'},
                             {text: 'Plugin', link: '/plugins/api-reference/plugin'},
+                            {text: 'Events', link: '/plugins/api-reference/events'},
                             {text: 'Services', link: '/plugins/api-reference/services'},
                             {text: 'Registries', link: '/plugins/api-reference/registries'},
                             {text: 'Settings', link: '/plugins/api-reference/settings'},
@@ -68,6 +77,7 @@ export default defineConfig({
                             {text: 'Logger', link: '/plugins/api-reference/logger.md'},
                             {
                                 text: 'UI Components',
+                                collapsed: true,
                                 link: '/plugins/api-reference/ui/',
                                 items: [
                                     {text: 'RRButton', link: '/plugins/api-reference/ui/rr-button'},
@@ -89,6 +99,7 @@ export default defineConfig({
                                     {text: 'Localized Components', link: '/plugins/api-reference/ui/localized-components'},
                                     {
                                         text: 'Forms', link: '/plugins/api-reference/ui/forms/index.md',
+                                        collapsed: true,
                                         items: [
                                             {text: 'FormCheckBox', link: '/plugins/api-reference/ui/forms/form-check-box'},
                                             {text: 'FormComboBox', link: '/plugins/api-reference/ui/forms/form-combo-box'},
@@ -109,19 +120,15 @@ export default defineConfig({
                         ]
                     }
                 ]
-            },
-            {
-                text: 'Porting from other platforms',
-                link: '/port/'
             }
         ],
 
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/Railroad-Team/Railroad'}
+            {icon: 'github', link: 'https://github.com/Railroad-Team/'},
+            {icon: 'discord', link: 'https://discord.turtywurty.dev/'}
         ],
     },
     srcDir: 'src',
-    ignoreDeadLinks: true, // TEMPORARY: Remove at a later date
     markdown: {
         theme: {
             light: "catppuccin-latte",

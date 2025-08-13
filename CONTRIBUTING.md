@@ -3,10 +3,7 @@
 By contributing code to the RailroadDocs repository, you:
 
 - Own all the rights to the code in your pull request
-
-Guidelines:
-
-- Every sentence must end in a full stop
+- Consent to the publishing of your code publicly
 
 ## How to start contributing
 
@@ -46,3 +43,7 @@ We don't want to waste your or our time on pull requests that just can't be just
 We want to make sure that all content added is of a same standard to any other piece, so please keep these guidelines in mind at all times.
 
 - Headers must be used in ascending order.
+- All sentences must end in a full stop.
+- Any references to class names or methods must be surrounded using "`".
+- All code snippets must be in code blocks, which are created using "\`\`\`java --code here --\`\`\`"
+- Any API feature page must have an accurate and descriptive example

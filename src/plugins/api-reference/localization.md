@@ -6,7 +6,7 @@ The Railroad Plugin API provides a localization system to help plugins support m
 
 The `LocalizationService` interface provides methods for retrieving localized strings based on a key and optional arguments. This allows your plugin to display messages, UI elements, and other text in the user's preferred language.
 
-### Key Methods:
+### Key Methods
 
 - `String get(String key)`: Retrieves the localized string for the given key.
 - `String get(String key, Object... args)`: Retrieves the localized string for the given key, replacing placeholders with the provided arguments.
@@ -51,7 +51,7 @@ Translations are stored in `.lang` files, which are simple key-value pair files.
 
 For example, an English (US) language file would be named `en_us.lang`.
 
-### Format:
+### Format
 
 Each line in a `.lang` file represents a key-value pair, where the key is used to retrieve the localized string, and the value is the translated text. Comments can be added using `#`.
 
@@ -65,7 +65,7 @@ settings.myplugin.enable_feature.title=Enable My Feature
 settings.myplugin.enable_feature.description=Toggles the main feature of my plugin.
 ```
 
-### Placeholders:
+### Placeholders
 
 Placeholders in the translated strings are denoted by `%s`, `%d`, etc., similar to `String.format()` in Java, corresponding to the order of arguments passed to the `localizationService.get()` method.
 

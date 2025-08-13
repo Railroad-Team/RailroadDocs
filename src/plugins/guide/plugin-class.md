@@ -2,7 +2,7 @@
 
 Once your project is set up, you can create your main plugin class that implements the `dev.railroadide.railroadpluginapi.Plugin` interface. This class will contain the logic for your plugin.
 
-### Example
+## Example
 
 Here is an example of a simple plugin that logs a message to the console when it is enabled:
 

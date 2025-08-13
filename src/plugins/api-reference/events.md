@@ -10,7 +10,7 @@ This is the base interface for all events in the Railroad system. All custom eve
 
 The `EventBus` is the central component for the event system. It allows plugins to publish new events and subscribe to existing ones. You can obtain an instance of the `EventBus` from the `PluginContext`.
 
-### Methods:
+### Methods
 
 - `void publish(Event event)`: Publishes an event to the bus, notifying all subscribed listeners.
 - `void subscribe(Class<T> eventType, EventListener<T> listener)`: Subscribes a given `EventListener` to events of a specific type.
@@ -20,7 +20,7 @@ The `EventBus` is the central component for the event system. It allows plugins 
 
 This interface is used to define a callback for handling events. When an event of the type `T` (which extends `Event`) is published, the `handle` method of the `EventListener` will be invoked.
 
-### Methods:
+### Methods
 
 - `void handle(T event)`: This method is called when an event of type `T` is published.
 

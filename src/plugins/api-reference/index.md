@@ -2,7 +2,7 @@
 
 This section provides a detailed reference for the Railroad Plugin API, covering core components, event handling, services, registries, settings, localization, secure storage, Gson utilities, JSON serialization, and UI components.
 
-## Topics:
+## Topics
 
 - [Plugin Lifecycle and Context](./plugin.md)
 - [Events](./events.md)

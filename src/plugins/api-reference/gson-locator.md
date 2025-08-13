@@ -6,7 +6,7 @@ The Railroad Plugin API provides a centralized way to access a pre-configured `G
 
 The `GsonLocator` is a utility class that provides a singleton instance of `com.google.gson.Gson`. Plugins should use this locator to obtain the `Gson` instance for their JSON operations.
 
-### Key Methods:
+### Key Methods
 
 - `static Gson getInstance()`: Retrieves the singleton `Gson` instance. Throws `IllegalStateException` if the `Gson` instance has not been set (which is typically handled by the core application during startup).
 
@@ -49,6 +49,4 @@ public class MyGsonPlugin implements Plugin {
         // Clean up resources if necessary
     }
 }
-```
-
 ```

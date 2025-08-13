@@ -2,11 +2,11 @@
 
 To create a Railroad plugin, you'll typically set up a new Gradle project. This allows you to manage dependencies, compile your code, and package your plugin into a JAR file.
 
-### Project Structure
+## Project Structure
 
 A typical Gradle project for a Railroad plugin will have the following structure:
 
-```
+```txt
 my-railroad-plugin/
 ├── src/
 │   ├── main/

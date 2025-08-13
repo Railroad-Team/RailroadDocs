@@ -6,7 +6,7 @@ The Railroad Plugin API provides a `SecureTokenStore` for securely storing sensi
 
 The `SecureTokenStore` class allows you to save, retrieve, and clear tokens securely. It typically uses platform-specific mechanisms (e.g., OS keychain, encrypted files) to protect the data.
 
-### Key Methods:
+### Key Methods
 
 - `SecureTokenStore(String serviceName)`: Constructor. `serviceName` is a unique identifier for your plugin's storage area.
 - `void saveToken(String token, String key)`: Saves a token associated with a given key.

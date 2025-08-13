@@ -1,18 +1,18 @@
 /* Light Mode */
 
 :root {
-    --vp-button-alt-bg: #e3e6ed;
+    --vp-button-alt-bg: #e3e6ed; /* Make secondary button background not blend in */
 }
 
 .VPNavBar {
-    border-bottom: 2px solid #d2d5dc;
-    background-color: #e6e9ef;
+    border-bottom: 2px solid #d2d5dc; /* Border for navbar */
+    background-color: #e6e9ef; /* Distinguish between nav bar and main page content */
 }
 
 /* Dark Mode */
 
 .dark {
-    --vp-button-alt-bg: #353552; /* Make front page secondary button background not blend in with background*/
+    --vp-button-alt-bg: #353552; /* Make secondary button background not blend in with background*/
 }
 
 .dark .VPNavBar {

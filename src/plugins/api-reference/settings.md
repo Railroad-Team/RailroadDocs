@@ -6,7 +6,7 @@ The Railroad Plugin API provides a robust system for defining, managing, and per
 
 The `Setting` class is the core component of the settings API. Each `Setting` represents a single configurable value within the application. Settings are typically registered with the settings registry and can be accessed and modified by plugins.
 
-### Key Properties:
+### Key Properties
 
 - `id` (String): A unique identifier for the setting (e.g., `myplugin:my_setting_id`).
 - `treePath` (String): Defines the hierarchical path for the setting, used for organizing settings in the UI (e.g., `plugins.myplugin.general`).
@@ -17,7 +17,7 @@ The `Setting` class is the core component of the settings API. Each `Setting` re
 - `description` (String): A descriptive text providing more information about the setting.
 - `codec` (SettingCodec&lt;T, ?&gt;): Defines how the setting's value is serialized/deserialized and how it interacts with UI components.
 
-### Building a Setting:
+### Building a Setting
 
 You create `Setting` instances using its fluent `builder` API:
 
@@ -51,7 +51,7 @@ Setting<String> customMessageSetting = Setting.builder(String.class, "myplugin:c
 
 `SettingCategory` is used to group related settings together, primarily for organizing them within the application's user interface. Each category has an `id`, `title`, and `description`.
 
-### Building a SettingCategory:
+### Building a SettingCategory
 
 ```java
 import dev.railroadide.core.settings.SettingCategory;
@@ -70,7 +70,7 @@ SettingCategory advancedCategory = SettingCategory.builder("myplugin:advanced")
 
 A `SettingCodec` defines how a setting's value is converted between its Java object representation, its JSON representation (for persistence), and its UI component representation (e.g., a `TextField` for a `String`).
 
-### Key Components:
+### Key Components
 
 - `nodeToValue`: Function to extract the value from a UI Node.
 - `valueToNode`: Function to set the value in a UI Node.
@@ -84,7 +84,7 @@ Plugins can create custom codecs for complex data types or custom UI components.
 
 Railroad provides a set of predefined `SettingCodec` instances for common data types, making it easy to create settings for basic types without defining custom codecs. These are available through `DefaultSettingCodecs`.
 
-### Available Default Codecs:
+### Available Default Codecs
 
 - `BOOLEAN` (for `Boolean` values, uses `CheckBox`)
 - `STRING` (for `String` values, uses `TextField`)
@@ -93,7 +93,7 @@ Railroad provides a set of predefined `SettingCodec` instances for common data t
 - `FLOAT` (for `Float` values, uses `TextField`)
 - `LONG` (for `Long` values, uses `TextField`)
 
-### Example Usage:
+### Example Usage
 
 ```java
 import dev.railroadide.core.settings.DefaultSettingCodecs;

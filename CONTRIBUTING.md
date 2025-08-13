@@ -41,6 +41,7 @@ We don't want to waste your or our time on pull requests that just can't be just
 ### Formatting Guidelines
 
 We want to make sure that all content added is of a same standard to any other piece, so please keep these guidelines in mind at all times.
+We suggest installing the markdownlint plugin, as it comes with a good set of guidelines for formatting markdown files.
 
 - Headers must be used in ascending order.
 - All sentences must end in a full stop.

@@ -19,12 +19,14 @@ Before you begin, ensure you have the following installed on your system:
    - Restart IntelliJ when prompted
 
 2. **Clone the Repository**:
+
    ```bash
    git clone https://github.com/Railroad-Team/Railroad.git
    cd Railroad
    ```
 
 3. **Update Submodules**:
+
    ```bash
    git submodule update --init --recursive
    ```
@@ -49,12 +51,15 @@ Before you begin, ensure you have the following installed on your system:
 ### Using Gradle Wrapper
 
 1. **Build the project**:
+
    ```bash
    ./gradlew build
    ```
+
    (On Windows, use `gradlew.bat` instead of `./gradlew`)
 
 2. **Run the application**:
+
    ```bash
    ./gradlew run
    ```

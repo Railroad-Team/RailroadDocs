@@ -19,12 +19,12 @@
 ## Enums
 
 - `BrowseType`: Defines the type of browsing operation:
-    - `FILE`: For selecting files.
-    - `DIRECTORY`: For selecting directories.
-    - `IMAGE`: For selecting image files (with predefined filters).
+  - `FILE`: For selecting files.
+  - `DIRECTORY`: For selecting directories.
+  - `IMAGE`: For selecting image files (with predefined filters).
 - `BrowseSelectionMode`: Defines the selection mode:
-    - `SINGLE`: Allows selecting only one item.
-    - `MULTIPLE`: Allows selecting multiple items.
+  - `SINGLE`: Allows selecting only one item.
+  - `MULTIPLE`: Allows selecting multiple items.
 
 ## Usage Example
 

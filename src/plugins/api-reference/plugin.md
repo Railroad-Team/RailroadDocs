@@ -6,7 +6,7 @@ These are the core components for creating a plugin in Railroad.
 
 This is the main interface that your plugin class must implement. It defines the lifecycle methods that the Railroad application will call when your plugin is loaded and unloaded.
 
-### Methods:
+### Methods
 
 - `void onEnable(PluginContext context)`: Called when your plugin is enabled. This is the primary entry point for your plugin's logic. You receive a `PluginContext` object which provides access to various application services and functionalities.
 - `void onDisable(PluginContext context)`: Called when your plugin is disabled. Use this method to clean up any resources, unregister listeners, or save state before your plugin is unloaded.
@@ -15,7 +15,7 @@ This is the main interface that your plugin class must implement. It defines the
 
 The `PluginContext` interface provides your plugin with access to the Railroad application's core services, event bus, logger, and other essential functionalities. An instance of `PluginContext` is passed to your plugin's `onEnable` and `onDisable` methods.
 
-### Key Methods:
+### Key Methods
 
 - `PluginDescriptor getDescriptor()`: Returns the descriptor of the plugin, containing metadata like name, version, and description.
 - `EventBus getEventBus()`: Provides access to the application's event bus, allowing your plugin to publish and subscribe to events.
@@ -31,5 +31,3 @@ The `PluginContext` interface provides your plugin with access to the Railroad a
 ## `PluginDescriptor`
 
 This interface describes your plugin and contains metadata such as its name, version, and description. This information is typically loaded from a plugin configuration file (e.g., `plugin.json`).
-
-

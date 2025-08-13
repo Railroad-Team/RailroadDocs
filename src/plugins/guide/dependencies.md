@@ -37,12 +37,12 @@ Here is an example of the `dependencies` object within a `plugin.json` file, dem
 }
 ```
 
-### Repository Object Fields (within `dependencies.repositories`):
+### Repository Object Fields (within `dependencies.repositories`)
 
 - `id` (string): A unique identifier for the repository.
 - `url` (string): The URL of the Maven repository.
 
-### Artifact Object Fields (within `dependencies.artifacts`):
+### Artifact Object Fields (within `dependencies.artifacts`)
 
 - `groupId` (string): The group ID of the Maven artifact.
 - `artifactId` (string): The artifact ID of the Maven artifact.

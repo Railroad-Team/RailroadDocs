@@ -2,7 +2,7 @@
 
 The `PluginContext` provides access to various services that your plugin can use to interact with the Railroad application. You can retrieve a service by calling the `getService()` method on the `PluginContext`.
 
-### Example
+## Example
 
 Here is an example of how to access the `ApplicationInfoService` to get the application version:
 

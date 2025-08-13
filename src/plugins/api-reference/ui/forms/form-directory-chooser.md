@@ -35,5 +35,3 @@ Constructs a new `TextFieldWithButton`.
 
 - `textField`: The text field for displaying the selected directory path.
 - `browseButton`: The browse button for opening the directory chooser, or `null` if not needed.
-
-```

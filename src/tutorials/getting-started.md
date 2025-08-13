@@ -21,7 +21,7 @@ features:
   - title: Contributing
   - title: Support
     icon: 📞
-    details: Join the Discord to get support with for Railroad.
+    details: Join the Discord to get support for Railroad.
     link: https://discord.turtywurty.dev/
     linkText: Join the Discord
 ---

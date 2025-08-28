@@ -66,7 +66,7 @@ public class MySettingPlugin implements Plugin {
 
 The `dev.railroadide.core.registry.Registry` interface defines the common operations for managing collections of items. Any registry you obtain from the `PluginContext` or `Registries` utility class will implement this interface.
 
-### Key Methods:
+### Key Methods
 
 - `String getId()`: Returns the unique identifier of the registry.
 - `Type getType()`: Returns the generic type of items managed by the registry.

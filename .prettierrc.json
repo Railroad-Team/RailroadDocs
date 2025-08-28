@@ -1,0 +1,14 @@
+{
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": false,
+    "plugins": ["prettier-plugin-vitepress"],
+    "overrides": [
+        {
+            "files": [".*md"],
+            "options": {
+                "parser": "markdown"
+            }
+        }
+    ]
+}

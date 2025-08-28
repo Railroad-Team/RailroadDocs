@@ -5,6 +5,7 @@ This guide covers the process of building, testing, and distributing your Railro
 ## Prerequisites
 
 Before building your plugin, ensure you have:
+
 - JDK 17 or later installed
 - Gradle 7.6+ installed or use the Gradle wrapper
 - Your plugin code is complete and tested locally
@@ -17,11 +18,13 @@ Before building your plugin, ensure you have:
 2. Run the build command for your operating system:
 
    **Windows:**
+
    ```powershell
    .\gradlew build
    ```
 
    **macOS/Linux:**
+
    ```bash
    ./gradlew build
    ```
@@ -29,6 +32,7 @@ Before building your plugin, ensure you have:
 ### Build Outputs
 
 Successful builds will generate the following in the `build/libs/` directory:
+
 - `your-plugin-1.0.0.jar` - Your compiled plugin
 - `your-plugin-1.0.0-sources.jar` - Source JAR (if configured)
 - `your-plugin-1.0.0-javadoc.jar` - Javadoc JAR (if configured)
@@ -66,9 +70,9 @@ The plugins directory is located in your Railroad application's data folder. The
 
 **Steps to Install:**
 
-1.  Locate the JAR file you built (e.g., `my-railroad-plugin-1.0.0.jar`) in your project's `build/libs/` directory.
-2.  Copy this JAR file.
-3.  Navigate to the Railroad plugins directory on your system.
-4.  Paste the copied JAR file into the `plugins` directory.
+1. Locate the JAR file you built (e.g., `my-railroad-plugin-1.0.0.jar`) in your project's `build/libs/` directory.
+2. Copy this JAR file.
+3. Navigate to the Railroad plugins directory on your system.
+4. Paste the copied JAR file into the `plugins` directory.
 
 Once the JAR file is in the correct location, restart your Railroad application (if it was running) to load the new plugin. Your plugin should now be active and its features available within Railroad.

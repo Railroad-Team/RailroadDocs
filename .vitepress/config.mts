@@ -23,7 +23,9 @@ export default defineConfig({
             {text: 'Development', link: '/development/building-and-running'},
             {text: 'Plugins', link: '/plugins/'}
         ],
-
+        search: {
+            provider: 'local'
+        },
         sidebar: [
             {
                 text: 'Tutorials',

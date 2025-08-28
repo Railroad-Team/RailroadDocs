@@ -20,5 +20,8 @@ features:
     linkText: Documentation
   - title: Contributing
   - title: Support
-  
+    icon: 📞
+    details: Join the Discord to get support for Railroad.
+    link: https://discord.turtywurty.dev/
+    linkText: Join the Discord
 ---

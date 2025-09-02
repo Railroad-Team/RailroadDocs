@@ -20,7 +20,7 @@ export default defineConfig({
         nav: [
             {text: 'Home', link: '/'},
             {text: 'Tutorials', link: '/tutorials/getting-started'},
-            {text: 'Development', link: '/development/building-and-running'},
+            {text: 'Development', link: '/development/building'},
             {text: 'Plugins', link: '/plugins/'}
         ],
 
@@ -36,7 +36,8 @@ export default defineConfig({
             {
                 text: 'Development',
                 items: [
-                    {text: 'Building and Running', link: '/development/building-and-running'}
+                    {text: 'Building', link: '/development/building'},
+                    {text: 'Running', link: '/development/running'}
                 ]
             },
             {

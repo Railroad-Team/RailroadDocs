@@ -133,5 +133,8 @@ export default defineConfig({
             light: "catppuccin-latte",
             dark: "catppuccin-mocha"
         }
-    }
+    },
+    ignoreDeadLinks: true,
+    cleanUrls: true,
+    lastUpdated: true
 })

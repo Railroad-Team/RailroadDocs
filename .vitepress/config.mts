@@ -57,7 +57,8 @@ export default defineConfig({
                             {text: 'Dependencies', link: '/plugins/guide/dependencies'},
                             {text: 'Events', link: '/plugins/guide/events'},
                             {text: 'Working with Projects', link: '/plugins/guide/working-with-projects'},
-                            {text: 'Building Plugins', link: '/plugins/guide/building-plugins'}
+                            {text: 'Building Plugins', link: '/plugins/guide/building-plugins'},
+                            {text: 'Styling UI Components', link: '/plugins/guide/styling-ui-components'}
                         ]
                     },
                     {
